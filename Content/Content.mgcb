@@ -1,0 +1,46 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:..\..\..\..\.nuget\packages\monogame.aseprite\2.0.4.1\contentFiles\netstandard2.0\MonoGame.Aseprite.ContentPipeline.dll
+
+#---------------------------------- Content ---------------------------------#
+
+#begin dino.aseprite
+/importer:AsepriteDocumentImporter
+/processor:AsepriteDocumentProcessor
+/processorParam:SheetType=Packed
+/processorParam:MergeDuplicateFrames=True
+/processorParam:IgnoreEmptyFrames=True
+/processorParam:OnlyVisibleLayers=True
+/processorParam:BorderPadding=0
+/processorParam:Spacing=0
+/processorParam:InnerPadding=0
+/build:dino.aseprite
+
+#begin shader.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:shader.fx
+
+#begin tileSet.aseprite
+/importer:AsepriteDocumentImporter
+/processor:AsepriteDocumentProcessor
+/processorParam:SheetType=Packed
+/processorParam:MergeDuplicateFrames=True
+/processorParam:IgnoreEmptyFrames=True
+/processorParam:OnlyVisibleLayers=True
+/processorParam:BorderPadding=0
+/processorParam:Spacing=0
+/processorParam:InnerPadding=0
+/build:tileSet.aseprite
+
